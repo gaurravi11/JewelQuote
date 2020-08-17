@@ -1,0 +1,251 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{DB070A36-D4C2-49EA-BBF6-3A63A368ADB4}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>JewelQuote</RootNamespace>
+    <AssemblyName>JewelQuote</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>sgc_logo_icon_S5p_icon.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="FontAwesome.Sharp, Version=5.13.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\FontAwesome.Sharp.5.13.0\lib\net45\FontAwesome.Sharp.dll</HintPath>
+    </Reference>
+    <Reference Include="MyControl">
+      <HintPath>..\..\..\Personal Work\MyControls\MyControl\bin\Debug\MyControl.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="FormLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormLogin.Designer.cs">
+      <DependentUpon>FormLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormMainMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormMainMenu.Designer.cs">
+      <DependentUpon>FormMainMenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Helper\ConvertionHelper.cs" />
+    <Compile Include="Helper\UtilityUI.cs" />
+    <Compile Include="Masters\FormProductType.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Masters\FormProductType.Designer.cs">
+      <DependentUpon>FormProductType.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Masters\FormSettingCategory.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Masters\FormSettingCategory.Designer.cs">
+      <DependentUpon>FormSettingCategory.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Masters\FormLabourCategory.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Masters\FormLabourCategory.Designer.cs">
+      <DependentUpon>FormLabourCategory.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Masters\FormMetal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Masters\FormMetal.Designer.cs">
+      <DependentUpon>FormMetal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Masters\FormCustomer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Masters\FormCustomer.Designer.cs">
+      <DependentUpon>FormCustomer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Masters\FormShapeNSize.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Masters\FormShapeNSize.Designer.cs">
+      <DependentUpon>FormShapeNSize.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Masters\FormStone.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Masters\FormStone.Designer.cs">
+      <DependentUpon>FormStone.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Masters\FormStoneWeight.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Masters\FormStoneWeight.Designer.cs">
+      <DependentUpon>FormStoneWeight.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Masters\FormStoneRate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Masters\FormStoneRate.Designer.cs">
+      <DependentUpon>FormStoneRate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Product\FormProduct.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Product\FormProduct.Designer.cs">
+      <DependentUpon>FormProduct.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Product\FormProductList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Product\FormProductList.Designer.cs">
+      <DependentUpon>FormProductList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Product\FormProductView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Product\FormProductView.Designer.cs">
+      <DependentUpon>FormProductView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Product\FormUpdateProduct.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Product\FormUpdateProduct.Designer.cs">
+      <DependentUpon>FormUpdateProduct.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="UserControls\UProductView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\UProductView.Designer.cs">
+      <DependentUpon>UProductView.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="FormLogin.resx">
+      <DependentUpon>FormLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormMainMenu.resx">
+      <DependentUpon>FormMainMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Masters\FormCustomer.resx">
+      <DependentUpon>FormCustomer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Masters\FormProductType.resx">
+      <DependentUpon>FormProductType.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Masters\FormSettingCategory.resx">
+      <DependentUpon>FormSettingCategory.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Masters\FormLabourCategory.resx">
+      <DependentUpon>FormLabourCategory.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Masters\FormMetal.resx">
+      <DependentUpon>FormMetal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Masters\FormShapeNSize.resx">
+      <DependentUpon>FormShapeNSize.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Masters\FormStone.resx">
+      <DependentUpon>FormStone.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Masters\FormStoneWeight.resx">
+      <DependentUpon>FormStoneWeight.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Masters\FormStoneRate.resx">
+      <DependentUpon>FormStoneRate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Product\FormProduct.resx">
+      <DependentUpon>FormProduct.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Product\FormProductList.resx">
+      <DependentUpon>FormProductList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Product\FormProductView.resx">
+      <DependentUpon>FormProductView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Product\FormUpdateProduct.resx">
+      <DependentUpon>FormUpdateProduct.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="UserControls\UProductView.resx">
+      <DependentUpon>UProductView.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Connected Services\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\AccessDBLayer\AccessDBLayer.csproj">
+      <Project>{c33c32ce-1c66-43d7-be87-c96c640fbcad}</Project>
+      <Name>AccessDBLayer</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\InterfaceLayer\ServiceLayer.csproj">
+      <Project>{59c4cc24-fe26-455f-8220-19a93352ca1a}</Project>
+      <Name>ServiceLayer</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ModelLayer\ModelLayer.csproj">
+      <Project>{011727b8-53df-4451-a22e-bcf803618269}</Project>
+      <Name>ModelLayer</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="sgc_logo_icon_S5p_icon.ico" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
